@@ -1,0 +1,29 @@
+let brickTypes = [
+            Brick( img: ["brickRed"] ),    //1
+            Brick( img: ["brickBlue"] ),   // 2
+            Brick( img: ["brickYellow"] ),   // 3
+            Brick( img: ["brickGreen"] ),    // 4
+            Brick( img: ["brickBlue1"] ),    // 5
+            Brick( img: ["brickBlue2"] ),    // 6
+            Brick( img: ["brickBlue3"] ),    // 7
+            Brick( img: ["brickGreen1"] ),   // 8
+            Brick( img: ["brickGreen2"] ),   // 9
+            Brick( img: ["brickGreen3"] ),   // 10
+            Brick( img: ["brickPurple1"] ),  // 11
+            Brick( img: ["brickPurple2"] ),  // 12
+            Brick( img: ["brickPurple3"] ),  // 13
+            Brick( img: ["brickStrawberry"] ),  // 14
+            Brick( img: ["brickMaroon"] ),      // 15
+            Brick (img: ["multiHitBrick2", "multiHitBrick1"] ),    // 16
+            Brick (img: ["multiHitBrick3", "multiHitBrick2", "multiHitBrick1"] ),   // 17
+            Brick (img: ["bric-transparent", "multiHitBrick1"] ),   // 18
+
+
+    enum PowerUpTypes : Int, Decodable { //0
+    case paddleLonger //0
+    case paddleShorter //1
+    case extraLife //2
+    case stickyPaddle //3
+    case multiBall //4
+    case fireBall //5
+  }
